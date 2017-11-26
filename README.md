@@ -12,6 +12,8 @@ Usage
 java -javaagent:/path/to/java-procfs-mbeans-agent-$VERSION.jar [-javaagent:/path/to/java-influxdb-metrics-agent-0.0.5.jar=/procfs/{namekeys=path},...] ...
 ```
 
+![visualvm](docs/visualvm.png)
+
 Current Status
 --------------
 

@@ -59,6 +59,7 @@ Current Status
 | /proc/swaps                  |        |
 | /proc/vmstat                 | DONE   |
 | /proc/zoneinfo               |        |
+| /proc/net/dev                |        |
 
 License
 -------

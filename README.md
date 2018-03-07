@@ -5,12 +5,33 @@ Java agent to make /proc metrics available as MXBeans, which is mainly intended 
 
 **WARNING** (2017-11-27) I just started this project and should not be considered production-ready yet. Also, I'm developing this on linux 4.13 so might not work well on older kernels for now.
 
+Installation
+------------
+
+#### Building from source
+
+```sh
+git clone https://github.com/eiiches/java-procfs-mbeans-agent.git
+cd java-procfs-mbeans-agent
+mvn clean package
+```
+
+Then, copy `target/java-procfs-mbeans-agent-{version}.jar` to your desired location.
+
+#### Downloading from Maven Central
+
+```sh
+curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.1/java-procfs-mbeans-agent-0.0.1.jar'
+```
+
 Usage
 -----
 
 ```sh
-java -javaagent:/path/to/java-procfs-mbeans-agent-$VERSION.jar [-javaagent:/path/to/java-influxdb-metrics-agent-0.0.5.jar=/procfs/{namekeys=path},...] ...
+java -javaagent:/path/to/java-procfs-mbeans-agent-$VERSION.jar [-javaagent:/path/to/java-influxdb-metrics-agent-0.0.1.jar=/procfs/{namekeys=path},...] ...
 ```
+
+![visualvm](docs/visualvm.png)
 
 Current Status
 --------------

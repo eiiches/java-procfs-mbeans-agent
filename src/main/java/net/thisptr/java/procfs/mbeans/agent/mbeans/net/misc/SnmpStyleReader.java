@@ -57,7 +57,7 @@ public class SnmpStyleReader {
 			final Map<String, Long> fields = new HashMap<>();
 			for (int i = 0; i < columns.length; ++i)
 				fields.put(columns[i], Long.valueOf(values[i]));
-			results.put(category, new LongCompositeData(fields));
+			results.put(category, new LongCompositeData(fields, path));
 		});
 		return results;
 	}

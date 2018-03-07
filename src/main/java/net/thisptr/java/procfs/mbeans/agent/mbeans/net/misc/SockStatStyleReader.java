@@ -49,6 +49,6 @@ public class SockStatStyleReader {
 			}
 		}
 
-		return MoreMaps.mapValues(values, LongCompositeData::new);
+		return MoreMaps.mapValues(values, subvalues-> new LongCompositeData(subvalues, path));
 	}
 }

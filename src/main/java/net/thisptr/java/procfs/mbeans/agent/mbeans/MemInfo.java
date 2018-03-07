@@ -48,6 +48,6 @@ public class MemInfo implements MemInfoMXBean {
 
 	@Override
 	public LongCompositeData get$() throws IOException {
-		return new LongCompositeData(parseMemInfo());
+		return new LongCompositeData(parseMemInfo(), "/proc/meminfo");
 	}
 }

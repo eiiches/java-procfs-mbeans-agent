@@ -15,9 +15,11 @@ import javax.management.openmbean.SimpleType;
 public class LongCompositeData implements CompositeDataView {
 	private final Map<String, Long> values;
 	private final long timestamp;
+	private final String description;
 
-	public LongCompositeData(final Map<String, Long> values) {
+	public LongCompositeData(final Map<String, Long> values, final String description) {
 		this.values = values;
+		this.description = description;
 		this.timestamp = System.currentTimeMillis();
 	}
 
@@ -38,7 +40,7 @@ public class LongCompositeData implements CompositeDataView {
 		});
 
 		try {
-			final CompositeType xct = new CompositeType(this.getClass().getName(), "foo",
+			final CompositeType xct = new CompositeType(this.getClass().getName(), description,
 					names.toArray(new String[names.size()]),
 					descs.toArray(new String[descs.size()]),
 					types.toArray(new OpenType[types.size()]));

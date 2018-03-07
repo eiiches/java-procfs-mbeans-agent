@@ -25,6 +25,6 @@ public class Snmp6 implements Snmp6MXBean {
 			final long value = Long.parseLong(kv[1].trim());
 			values.put(key, value);
 		}
-		return new LongCompositeData(values);
+		return new LongCompositeData(values, "/proc/net/snmp6");
 	}
 }

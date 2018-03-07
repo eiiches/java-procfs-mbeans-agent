@@ -15,7 +15,7 @@ public class VmStat implements VmStatMXBean {
 
 	@Override
 	public LongCompositeData get$() throws IOException {
-		return new LongCompositeData(parse());
+		return new LongCompositeData(parse(), "/proc/vmstat");
 	}
 
 	private static Map<String, Long> parse() throws IOException {

@@ -60,6 +60,10 @@ Current Status
 | /proc/vmstat                 | DONE   |
 | /proc/zoneinfo               |        |
 | /proc/net/dev                |        |
+| /proc/net/stat/nf_conntrack  |        |
+| /proc/net/stat/arp_cache     |        |
+| /proc/net/stat/rt_cache      |        |
+| /proc/net/stat/ndisc_cache   |        |
 
 License
 -------

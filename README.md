@@ -44,26 +44,27 @@ Current Status
 | /proc/interrupts             |        |
 | /proc/loadavg                | DONE   |
 | /proc/meminfo                | DONE   |
+| /proc/net/dev                |        |
 | /proc/net/netstat            | DONE   |
 | /proc/net/snmp6              | DONE   |
 | /proc/net/snmp               | DONE   |
 | /proc/net/sockstat6          | DONE   |
 | /proc/net/sockstat           | DONE   |
+| /proc/net/stat/arp_cache     |        |
+| /proc/net/stat/ndisc_cache   |        |
+| /proc/net/stat/nf_conntrack  |        |
+| /proc/net/stat/rt_cache      |        |
 | /proc/pagetypeinfo           |        |
 | /proc/schedstat              |        |
 | /proc/self/io                | DONE   |
 | /proc/self/stat              | DONE   |
 | /proc/self/statm             | DONE   |
+| /proc/slabinfo               |        |
 | /proc/softirqs               | DONE   |
 | /proc/stat                   | DONE   |
 | /proc/swaps                  |        |
 | /proc/vmstat                 | DONE   |
 | /proc/zoneinfo               |        |
-| /proc/net/dev                |        |
-| /proc/net/stat/nf_conntrack  |        |
-| /proc/net/stat/arp_cache     |        |
-| /proc/net/stat/rt_cache      |        |
-| /proc/net/stat/ndisc_cache   |        |
 
 License
 -------

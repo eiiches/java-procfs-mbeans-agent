@@ -63,6 +63,14 @@ Current Status
 | /proc/softirqs               | DONE   |
 | /proc/stat                   | DONE   |
 | /proc/swaps                  |        |
+| /proc/sys/fs/aio-nr          |        |
+| /proc/sys/fs/dentry-state    |        |
+| /proc/sys/fs/file-nr         |        |
+| /proc/sys/fs/inode-nr        |        |
+| /proc/sys/fs/inode-state     |        |
+| /proc/sys/kernel/pty/nr      |        |
+| /proc/sys/kernel/random/entropy_avail |        |
+| /proc/uptime                 |        |
 | /proc/vmstat                 | DONE   |
 | /proc/zoneinfo               |        |
 

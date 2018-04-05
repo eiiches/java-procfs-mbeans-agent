@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.thisptr.java.procfs.mbeans.agent.LoggerFactory;
 
 import net.thisptr.java.procfs.mbeans.agent.misc.LongCompositeData;
 import net.thisptr.java.procfs.mbeans.agent.misc.MoreFiles;

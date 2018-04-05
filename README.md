@@ -21,14 +21,14 @@ Then, copy `target/java-procfs-mbeans-agent-{version}.jar` to your desired locat
 #### Downloading from Maven Central
 
 ```sh
-curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.1/java-procfs-mbeans-agent-0.0.1.jar'
+curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.2/java-procfs-mbeans-agent-0.0.2.jar'
 ```
 
 Usage
 -----
 
 ```sh
-java -javaagent:/path/to/java-procfs-mbeans-agent-$VERSION.jar [-javaagent:/path/to/java-influxdb-metrics-agent-0.0.1.jar=/procfs/{namekeys=path},...] ...
+java -javaagent:/path/to/java-procfs-mbeans-agent-$VERSION.jar [-javaagent:/path/to/java-influxdb-metrics-agent-0.0.2.jar=/procfs/{namekeys=path},...] ...
 ```
 
 ![visualvm](docs/visualvm.png)

@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.thisptr.java.procfs.mbeans.agent.LoggerFactory;
 
 import net.thisptr.java.procfs.mbeans.agent.misc.MoreFiles;
 import net.thisptr.java.procfs.mbeans.agent.misc.SingleCache;

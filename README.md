@@ -1,7 +1,7 @@
 java-procfs-mbeans-agent
 ========================
 
-Java agent to make /proc metrics available as MXBeans, which is mainly intended for use with [java-influxdb-metrics-agent](https://github.com/eiiches/java-influxdb-metrics-agent) to send /proc metrics to InfluxDB.
+Java agent to make /proc metrics available as MXBeans, which is mainly intended for use with [java-influxdb-metrics-agent](https://github.com/eiiches/java-influxdb-metrics-agent) or [java-prometheus-metrics-agent](https://github.com/eiiches/java-prometheus-metrics-agent) to send /proc metrics to InfluxDB or Prometheus.
 
 **WARNING** (2017-11-27) I just started this project and should not be considered production-ready yet. Also, I'm developing this on linux 4.13 so might not work well on older kernels for now.
 

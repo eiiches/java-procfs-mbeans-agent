@@ -36,43 +36,44 @@ java -javaagent:/path/to/java-procfs-mbeans-agent-$VERSION.jar [-javaagent:/path
 Current Status
 --------------
 
-| path                         | status |
-|------------------------------|--------|
-| /proc/buddyinfo              | DONE   |
-| /proc/cpuinfo                |        |
-| /proc/diskstats              | DONE   |
-| /proc/interrupts             |        |
-| /proc/loadavg                | DONE   |
-| /proc/meminfo                | DONE   |
-| /proc/net/dev                |        |
-| /proc/net/netstat            | DONE   |
-| /proc/net/snmp6              | DONE   |
-| /proc/net/snmp               | DONE   |
-| /proc/net/sockstat6          | DONE   |
-| /proc/net/sockstat           | DONE   |
-| /proc/net/stat/arp_cache     |        |
-| /proc/net/stat/ndisc_cache   |        |
-| /proc/net/stat/nf_conntrack  |        |
-| /proc/net/stat/rt_cache      |        |
-| /proc/pagetypeinfo           |        |
-| /proc/schedstat              |        |
-| /proc/self/io                | DONE   |
-| /proc/self/stat              | DONE   |
-| /proc/self/statm             | DONE   |
-| /proc/slabinfo               |        |
-| /proc/softirqs               | DONE   |
-| /proc/stat                   | DONE   |
-| /proc/swaps                  |        |
-| /proc/sys/fs/aio-nr          |        |
-| /proc/sys/fs/dentry-state    |        |
-| /proc/sys/fs/file-nr         |        |
-| /proc/sys/fs/inode-nr        |        |
-| /proc/sys/fs/inode-state     |        |
-| /proc/sys/kernel/pty/nr      |        |
-| /proc/sys/kernel/random/entropy_avail |        |
-| /proc/uptime                 |        |
-| /proc/vmstat                 | DONE   |
-| /proc/zoneinfo               |        |
+| path                         | status | requirements       |
+|------------------------------|--------|--------------------|
+| /proc/buddyinfo              | DONE   |                    |
+| /proc/cpuinfo                |        |                    |
+| /proc/diskstats              | DONE   |                    |
+| /proc/interrupts             |        |                    |
+| /proc/loadavg                | DONE   |                    |
+| /proc/meminfo                | DONE   |                    |
+| /proc/net/dev                |        |                    |
+| /proc/net/netstat            | DONE   |                    |
+| /proc/net/snmp6              | DONE   |                    |
+| /proc/net/snmp               | DONE   |                    |
+| /proc/net/sockstat6          | DONE   |                    |
+| /proc/net/sockstat           | DONE   |                    |
+| /proc/net/stat/arp_cache     |        |                    |
+| /proc/net/stat/ndisc_cache   |        |                    |
+| /proc/net/stat/nf_conntrack  |        |                    |
+| /proc/net/stat/rt_cache      |        |                    |
+| /proc/pagetypeinfo           |        |                    |
+| /proc/schedstat              |        |                    |
+| /proc/self/io                | DONE   |                    |
+| /proc/self/stat              | DONE   |                    |
+| /proc/self/statm             | DONE   |                    |
+| /proc/self/sched             |        | CONFIG_SCHED_DEBUG |
+| /proc/slabinfo               |        |                    |
+| /proc/softirqs               | DONE   |                    |
+| /proc/stat                   | DONE   |                    |
+| /proc/swaps                  |        |                    |
+| /proc/sys/fs/aio-nr          |        |                    |
+| /proc/sys/fs/dentry-state    |        |                    |
+| /proc/sys/fs/file-nr         |        |                    |
+| /proc/sys/fs/inode-nr        |        |                    |
+| /proc/sys/fs/inode-state     |        |                    |
+| /proc/sys/kernel/pty/nr      |        |                    |
+| /proc/sys/kernel/random/entropy_avail |        |           |
+| /proc/uptime                 |        |                    |
+| /proc/vmstat                 | DONE   |                    |
+| /proc/zoneinfo               |        |                    |
 
 License
 -------

@@ -25,6 +25,9 @@ import net.thisptr.java.procfs.mbeans.agent.mbeans.SoftIrqs;
 import net.thisptr.java.procfs.mbeans.agent.mbeans.Stat;
 import net.thisptr.java.procfs.mbeans.agent.mbeans.Stat_Cpu;
 import net.thisptr.java.procfs.mbeans.agent.mbeans.VmStat;
+import net.thisptr.java.procfs.mbeans.agent.mbeans.cgroup.Cpu;
+import net.thisptr.java.procfs.mbeans.agent.mbeans.cgroup.CpuAcct;
+import net.thisptr.java.procfs.mbeans.agent.mbeans.cgroup.Memory;
 import net.thisptr.java.procfs.mbeans.agent.mbeans.net.NetStat;
 import net.thisptr.java.procfs.mbeans.agent.mbeans.net.Snmp;
 import net.thisptr.java.procfs.mbeans.agent.mbeans.net.Snmp6;
@@ -53,6 +56,9 @@ public class AgentMain {
 		server.registerMBean(new Stat(), new ObjectName("procfs", "path", "/proc/stat"));
 		server.registerMBean(new ProcessStatm(), new ObjectName("procfs", "path", "/proc/self/statm"));
 		server.registerMBean(new ProcessStat(), new ObjectName("procfs", "path", "/proc/self/stat"));
+		server.registerMBean(new Cpu(), new ObjectName("procfs", "path", "/sys/fs/cgroup/cpu"));
+		server.registerMBean(new CpuAcct(), new ObjectName("procfs", "path", "/sys/fs/cgroup/cpuacct"));
+		server.registerMBean(new Memory(), new ObjectName("procfs", "path", "/sys/fs/cgroup/memory"));
 
 		discoverOnce(server);
 		discoverPeriodically(server);

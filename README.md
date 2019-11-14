@@ -74,6 +74,10 @@ Current Status
 | /proc/uptime                 |        |                    |
 | /proc/vmstat                 | DONE   |                    |
 | /proc/zoneinfo               |        |                    |
+| /sys/fs/cgroup/cpu           | DONE   |                    |
+| /sys/fs/cgroup/cpuacct       | DONE   |                    |
+| /sys/fs/cgroup/memory        | DONE   |                    |
+| /sys/fs/cgroup/blkio         |        |                    |
 
 License
 -------

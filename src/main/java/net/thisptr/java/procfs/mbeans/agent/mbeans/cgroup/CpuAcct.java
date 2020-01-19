@@ -2,6 +2,7 @@ package net.thisptr.java.procfs.mbeans.agent.mbeans.cgroup;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.NoSuchFileException;
 
 import net.thisptr.java.procfs.mbeans.agent.misc.LongCompositeData;
 import net.thisptr.java.procfs.mbeans.agent.misc.MoreFiles;
@@ -16,6 +17,8 @@ public class CpuAcct implements CpuAcctMXBean {
 	private long readAsLong(final String path) {
 		try {
 			return MoreFiles.readAsLong(new File(cgroupfs, path).toPath());
+		} catch (NoSuchFileException e) {
+			throw new UnsupportedOperationException(e);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}

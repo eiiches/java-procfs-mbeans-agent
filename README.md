@@ -33,7 +33,7 @@ Then, copy `target/java-procfs-mbeans-agent-{version}.jar` to your desired locat
 #### Downloading from Maven Central
 
 ```sh
-curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.3/java-procfs-mbeans-agent-0.0.3.jar'
+curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.4/java-procfs-mbeans-agent-0.0.4.jar'
 ```
 
 Usage

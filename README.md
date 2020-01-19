@@ -5,6 +5,18 @@ Java agent to make /proc metrics available as MXBeans, which is mainly intended 
 
 **WARNING** (2017-11-27) I just started this project and should not be considered production-ready yet. Also, I'm developing this on linux 4.13 so might not work well on older kernels for now.
 
+Project status
+--------------
+
+As of now (2020-01-12), I consider this project a failure due to the following reasons:
+
+* Extra layers in observability (/proc -> MBeans -> Prometheus format) makes it harder to reach and dig into kernel code that produces the metric. Moreover, this wastes CPU and other resources.
+* JVM has GC. If JVM stops due to long GC or something, metrics become unavailable, which is not good. We then have to investigate why they are missing.
+* Kubernetes now has sharedProcessNamespaces. When enabled, process-specific (/proc/self/io, etc.) and namespaced metrics are accessible from other containers in a Pod. It's better to add an exporter sidecar that scrapes /proc/PID/io, etc.
+* This agent cannot be used for non-JVM apps. I'm sure using a separate tool for non-JVM apps will be a headache because of different metric names, etc.
+
+Once I find a better alternative for my use (or build one myself), this repository will be archived.
+
 Installation
 ------------
 
@@ -21,7 +33,7 @@ Then, copy `target/java-procfs-mbeans-agent-{version}.jar` to your desired locat
 #### Downloading from Maven Central
 
 ```sh
-curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.3/java-procfs-mbeans-agent-0.0.3.jar'
+curl -O 'http://central.maven.org/maven2/net/thisptr/java-procfs-mbeans-agent/0.0.4/java-procfs-mbeans-agent-0.0.4.jar'
 ```
 
 Usage

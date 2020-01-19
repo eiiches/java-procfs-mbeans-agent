@@ -9,7 +9,7 @@
 	<artifactId>java-procfs-mbeans-agent</artifactId>
 	<name>Java Procfs MBeans Agent</name>
 	<packaging>jar</packaging>
-	<version>0.0.4</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<description>Java agent to make /proc metrics available as MXBeans</description>
 	<url>https://github.com/eiiches/java-procfs-mbeans-agent</url>
 
@@ -32,7 +32,7 @@
 		<connection>scm:git:git@github.com:eiiches/java-procfs-mbeans-agent.git</connection>
 		<developerConnection>scm:git:git@github.com:eiiches/java-procfs-mbeans-agent.git</developerConnection>
 		<url>git@github.com:eiiches/java-procfs-mbeans-agent.git</url>
-		<tag>java-procfs-mbeans-agent-0.0.4</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
